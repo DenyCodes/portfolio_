@@ -62,12 +62,3 @@ export const Bottom = styled.button`
   margin: 5px;
   padding: 10px;
 `
-export const GitFoot = styled.div`
-  background-color: #000;
-  border-radius: 10px;
-  a {
-    text-transform: none;
-    color: #fff;
-    text-decoration: none;
-  }
-`

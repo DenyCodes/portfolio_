@@ -1,14 +1,5 @@
 import { useEffect, useState } from 'react'
-import {
-  Infos,
-  List,
-  ListItem,
-  Visitar,
-  Image,
-  Git,
-  Site,
-  GitFoot
-} from './styles'
+import { Infos, List, ListItem, Visitar, Image, Git, Site } from './styles'
 import github from '../../images/Vector.png'
 
 type Props = {
@@ -132,12 +123,6 @@ const RepoList = ({ nomeUsuario }: Props) => {
               )
             )}
           </List>
-          <GitFoot>
-            <a href="https://github.com/DenyCodes">
-              <Image src={github} />
-              Ver todos os projetos no GitHub
-            </a>
-          </GitFoot>
         </>
       )}
     </div>
