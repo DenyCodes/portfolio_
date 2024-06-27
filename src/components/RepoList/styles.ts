@@ -54,3 +54,20 @@ export const Site = styled.div`
     text-align: center;
   }
 `
+export const Bottom = styled.button`
+  background-color: #000;
+  color: #fff;
+  width: 100px;
+  border-radius: 35px;
+  margin: 5px;
+  padding: 10px;
+`
+export const GitFoot = styled.div`
+  background-color: #000;
+  border-radius: 10px;
+  a {
+    text-transform: none;
+    color: #fff;
+    text-decoration: none;
+  }
+`

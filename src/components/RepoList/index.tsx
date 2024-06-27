@@ -1,5 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Infos, List, ListItem, Visitar, Image, Git, Site } from './styles'
+import {
+  Infos,
+  List,
+  ListItem,
+  Visitar,
+  Image,
+  Git,
+  Site,
+  GitFoot
+} from './styles'
 import github from '../../images/Vector.png'
 
 type Props = {
@@ -22,11 +31,8 @@ const specificRepos = [
   'playtecno',
   'eplay',
   'todoreact',
-  'minhas-tarefas',
   'sorteador-grunt',
   'ebac_sports',
-  'github_react',
-  'calculadoravue',
   'ebac_games_redux',
   'sorteador_grunt'
 ]
@@ -88,7 +94,7 @@ const RepoList = ({ nomeUsuario }: Props) => {
           <Infos>
             <b>Seguidores:</b> {followers} | <b>Repositórios:</b> {reposCount}
           </Infos>
-          <h2>Todos os Repositórios</h2>
+          <h2>Projetos em destaque</h2>
           <List>
             {specificRepoList.map(
               ({ id, name, language, html_url, homepage }) => (
@@ -126,6 +132,12 @@ const RepoList = ({ nomeUsuario }: Props) => {
               )
             )}
           </List>
+          <GitFoot>
+            <a href="https://github.com/DenyCodes">
+              <Image src={github} />
+              Ver todos os projetos no GitHub
+            </a>
+          </GitFoot>
         </>
       )}
     </div>

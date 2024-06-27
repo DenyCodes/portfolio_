@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Perfil from './components/perfil'
 import RepoList from './components/RepoList'
 import { Container, GlobalCss } from './GlobalStyle'
@@ -10,6 +11,7 @@ function App() {
       <Container>
         <RepoList nomeUsuario={'denycodes'} />
       </Container>
+      <Footer />
     </>
   )
 }

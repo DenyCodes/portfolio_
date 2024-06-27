@@ -5,8 +5,11 @@ export const Header = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 180px 0 40px;
+    padding: 80px;
     margin-bottom: 80px;
+    p {
+    margin-top:10px;
+    color: #fff;}
 }
 `
 export const Avatar = styled.img`
@@ -19,4 +22,10 @@ export const Name = styled.h1`
   font-size: 18px;
   padding-top: 20px;
   color: #fff;
+`
+export const IconImg = styled.img`
+  width: 50px;
+`
+export const DivIcon = styled.div`
+  margin-top: 10px;
 `
